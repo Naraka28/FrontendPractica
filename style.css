@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+}
+.nav-bar {
+  background-color: #111;
+  color: white;
+  padding: 16px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.precios {
+  font-weight: bold;
+}
