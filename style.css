@@ -9,7 +9,7 @@ a {
   color: darkgray;
 }
 .nav-bar {
-  background-color: #111;
+  background-color: #1d1463;
   color: white;
   padding: 16px;
 }
@@ -24,23 +24,42 @@ a {
   color: white;
   text-decoration: none;
 }
-
 .card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 16px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
-.card h3 {
-  margin: 0 0 8px 0;
+.card-image {
+  flex-shrink: 0;
+  width: 128px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
-.card p {
-  margin: 4px 0;
-  font-size: 14px;
+.card-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.precios {
+.card-items h3 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.card-items p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.precio {
+  font-size: 1.3rem;
   font-weight: bold;
 }
