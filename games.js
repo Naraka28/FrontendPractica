@@ -81,13 +81,13 @@ juegos.videojuegos.forEach((juego) => {
   carta.classList.add("card");
 
   carta.innerHTML = `
-  <img class="card-image" src="${juego.imagen}" width="128" height="180">
-  <div class="card-items">
+  <img class="card-image" src="${juego.imagen}" width="128" height="180" alt="${juego.nombre}">
+  <article class="card-items">
     <h3>${juego.nombre}</h3>
     <p>Clasificación: ${juego.clasificacion}</p>
     <p>Lanzamiento: ${juego.fecha}</p>
     <p class="precio">Precio: $${juego.precio}</p>
-  </div>
+  </article>
   `;
 
   contenedorCartas.appendChild(carta);

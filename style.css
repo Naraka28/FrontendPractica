@@ -63,3 +63,14 @@ a {
   font-size: 1.3rem;
   font-weight: bold;
 }
+.footer {
+  margin-top: 40px;
+  padding: 16px;
+  background-color: #1d1463;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
