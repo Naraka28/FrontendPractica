@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend</title>
+    <title>Carrito | VideoSmart</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,19 +11,23 @@
       <ul class="nav-items">
         <li><a href="index.html">VideoSmart</a></li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="sales.html">Ofertas</a></li>
         <li><a href="carrito.html">Carrito</a></li>
       </ul>
     </nav>
-    <main>
-      <section id="juegos"></section>
-      <div id="toast" class="toast"></div>
+
+    <main class="cart-container">
+      <h2>Tu carrito</h2>
+
+      <section id="cart-items"></section>
+
+      <div class="cart-summary">
+        <h3>Total: $<span id="total">0</span> MXN</h3>
+        <button class="btn-clear" onclick="vaciarCarrito()">
+          Vaciar carrito
+        </button>
+      </div>
     </main>
 
-    <footer class="footer">
-      <p>&COPY; 2026 VideoSmart · Todos los derechos reservados</p>
-    </footer>
-
-    <script src="games.js"></script>
+    <script src="carrito.js"></script>
   </body>
 </html>

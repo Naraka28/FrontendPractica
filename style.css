@@ -74,3 +74,83 @@ a {
 .footer p {
   font-size: 0.9rem;
 }
+
+.btn-cart {
+  margin-top: 12px;
+  padding: 12px 18px;
+
+  background-color: #1d1463;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn-cart:hover {
+  background-color: #2a1fa3;
+}
+
+.btn-cart:active {
+  transform: scale(0.97);
+}
+
+.btn-cart:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 20, 99, 0.3);
+}
+.card-items .btn-cart {
+  align-self: flex-start;
+}
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: #1d1463;
+  color: white;
+
+  padding: 12px 18px;
+  border-radius: 8px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
+.cart-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-actions button {
+  margin: 0 0.25rem;
+}
+
+.btn-remove {
+  margin-left: 0.5rem;
+  background: #c0392b;
+  color: white;
+}
